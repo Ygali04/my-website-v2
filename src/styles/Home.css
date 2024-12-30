@@ -1,0 +1,29 @@
+/* Home.css */
+body {
+    background-color: #111827;
+    color: #ffffff; /* Ensure text is visible on dark background */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.homepage-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.homepage-section {
+    padding: 60px 20px;
+    margin: 40px 0;
+}
+
+a {
+    color: #1e90ff; /* Light blue for links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #63b3ed; /* Lighter blue on hover */
+}
