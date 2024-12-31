@@ -5,8 +5,8 @@ export default function Sidebar({ onNavigate }) {
         { id: 'experience', icon: '📚', label: 'Experience' },
         { id: 'projects', icon: '💻', label: 'Projects' },
         { id: 'skills', icon: '🛠️', label: 'Skills' },
-        { id: 'about', icon: 'ℹ️', label: 'About' },
-        { id: 'footer', icon: '🔗', label: 'Footer' },
+        // { id: 'about', icon: 'ℹ️', label: 'About' },
+        //{ id: 'footer', icon: '🔗', label: 'Footer' },
     ];
 
     return (

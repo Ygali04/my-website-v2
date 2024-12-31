@@ -73,9 +73,9 @@ export default function Home() {
                 <div ref={skillsRef}>
                     <Skills />
                 </div>
-                <div ref={aboutRef}>
+                {/* <div ref={aboutRef}>
                     <About />
-                </div>
+                </div> */}
                 <div ref={footerRef}>
                     <Footer />
                 </div>

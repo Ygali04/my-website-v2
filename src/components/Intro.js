@@ -5,6 +5,7 @@ import '../styles/Intro.css';
 import { LinkedIn, Email } from '@mui/icons-material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { OpenInNewTab } from '../helpers/OpenInNewtab.js';
+import HistoryEduIcon from '@mui/icons-material/HistoryEdu';
 
 export default function Intro({ chatRef }) {
     const scrollToChat = () => {
@@ -27,29 +28,29 @@ export default function Intro({ chatRef }) {
                     </div>
                     {/* Text and Social Links Section */}
                     <div className="p-11 flex-grow">
-                        <h1 className="block mt-4 text-xl leading-tight font-bold text-gray-100">Yahvin Gali</h1>
+                        <h1 className="block mt-4 text-3xl leading-tight font-bold text-gray-100">Yahvin Gali</h1>
                         <h2 className="mt-3 text-gray-200">Full Stack + MLE Dev</h2>
                         <h3 className="mt-3 text-gray-300">📍 Los Angeles, CA - USA 🇺🇸</h3>
                         <p className="mt-3 text-gray-200">End-to-End Generalist in Full Stack WebDev & LLM Research</p>
                         <div className="social mt-6 flex space-x-4">
-                            <button
-                                className="bg-slate-700 text-white p-2 rounded-lg hover:bg-slate-600"
-                                onClick={() => window.location.href = 'mailto:yahvin@gmail.com'}
-                            >
-                                <Email />
-                            </button>
-                            <button
-                                className="bg-slate-700 text-white p-2 rounded-lg hover:bg-slate-600"
-                                onClick={() => OpenInNewTab('https://www.linkedin.com/in/yahvin-gali/')}
-                            >
-                                <LinkedIn />
-                            </button>
-                            <button
-                                className="bg-slate-700 text-white p-2 rounded-lg hover:bg-slate-600"
-                                onClick={() => OpenInNewTab('https://github.com/Ygali04')}
-                            >
-                                <GitHubIcon />
-                            </button>
+                            {[
+                                { icon: <Email />, label: 'Email', action: () => window.location.href = 'mailto:yahvin@gmail.com' },
+                                { icon: <LinkedIn />, label: 'LinkedIn', action: () => OpenInNewTab('https://www.linkedin.com/in/yahvin-gali/') },
+                                { icon: <GitHubIcon />, label: 'GitHub', action: () => OpenInNewTab('https://github.com/Ygali04') },
+                                { icon: <HistoryEduIcon />, label: 'Resume', action: () => OpenInNewTab('https://drive.google.com/file/d/1iqNmivMPZQ0tioE3zxxPMxJjLVViXtwb/view?usp=sharing') },
+                            ].map((button, index) => (
+                                <div key={index} className="relative group">
+                                    <button
+                                        className="bg-slate-700 text-white p-2 rounded-lg hover:bg-slate-600"
+                                        onClick={button.action}
+                                    >
+                                        {button.icon}
+                                    </button>
+                                    <div className="absolute bottom-[-40px] left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-sm py-1 px-2 rounded-md opacity-0 group-hover:opacity-100 transition-opacity">
+                                        {button.label}
+                                    </div>
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </div>

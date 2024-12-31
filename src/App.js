@@ -6,9 +6,6 @@ import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 //Pages
 import Home from "./pages/Home";
 
-//Components
-import Footer from "./components/Footer";
-
 function App() {
   return (
     <div className="App">
@@ -19,7 +16,6 @@ function App() {
             element={<Home />} 
           />
         </Routes>
-        <Footer />
       </Router>
     </div>
   );

@@ -5,7 +5,7 @@ export const ProjectList = [
     name: "Bruinbot",
     slug: "Bruinbot",
     image: Bruinbot,
-    skills: "MERN, AWS, LlamaIndex, Langchain, HuggingFace, Digital Ocean, Docker",
+    skills: "MERN, AWS, Langchain, HuggingFace, Digital Ocean, Docker",
     github: "https://github.com/ucla-physicalsciences/bruin-bot",
     website: "https://aichat.physics.ucla.edu/home"
   },

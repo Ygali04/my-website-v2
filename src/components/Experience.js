@@ -5,6 +5,7 @@ import React from 'react';
 export default function Experience() {
   return (
     <div className="experience-container py-10 px-6">
+      <h1 className="text-3xl font-bold text-center text-white mb-5 mt-0">Experience</h1>
       <ol className="relative border-s border-gray-600">
         <li className="mb-10 ms-6">
           <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-500 rounded-full -start-3 ring-8 ring-gray-800">
