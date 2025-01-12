@@ -11,8 +11,8 @@ function Projects() {
   const closeModal = () => setSelectedProject(null);
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-20 text-center text-white">Personal Projects</h1>
+    <div className="container mx-auto px-4 py-1">
+      <h1 className="text-3xl font-bold mt-2 mb-10 text-center text-white">Personal Projects</h1>
       <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {ProjectList.map((project) => (
           <ProjectItem

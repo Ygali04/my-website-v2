@@ -5,7 +5,8 @@ import EmojiPicker from "emoji-picker-react";
 
 const MyChat = () => {
   const [messages, setMessages] = useState([
-    { id: 1, text: "Hey there! 👋", sender: "bot", timestamp: new Date().toLocaleTimeString() }
+    { id: 1, text: "Hey there! 👋", sender: "bot", timestamp: new Date().toLocaleTimeString() },
+    { id: 2, text: "This fine-tuned chatbot is currently under development. Stay tuned for some cool stuff!", sender: "bot", timestamp: new Date().toLocaleTimeString() }
   ]);
   const [newMessage, setNewMessage] = useState("");
   const [isTyping, setIsTyping] = useState(false);

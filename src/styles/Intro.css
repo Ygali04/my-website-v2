@@ -25,9 +25,9 @@
     margin-bottom: 220px;
 }  
 
-/* Center the arrow section */
+/* General styling for the arrow container */
 .arrow-container {
-    margin-top: 500px; /* 50px space above the arrow */
+    margin-top: 460px; /* Default for larger screens */
     margin-bottom: 100px; /* 100px space below the arrow */
     display: flex;
     justify-content: center; /* Center horizontally */
@@ -35,6 +35,21 @@
     flex-direction: column;
 }
 
+/* Adjustments for smaller screens (iPads in portrait mode) */
+@media screen and (max-width: 768px) {
+    .arrow-container {
+        margin-top: 800px; /* Reduce margin for smaller screens */
+        margin-bottom: 80px; /* Reduce bottom margin */
+    }
+}
+
+/* Adjustments for smaller screens (iPhones and smaller devices) */
+@media screen and (max-width: 480px) {
+    .arrow-container {
+        margin-top: 800px; /* Further reduce margin for iPhones */
+        margin-bottom: 60px; /* Further reduce bottom margin */
+    }
+}
 
 /* Text styling */
 .text-light-blue {

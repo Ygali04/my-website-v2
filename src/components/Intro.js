@@ -31,7 +31,7 @@ export default function Intro({ chatRef }) {
                         <h1 className="block mt-4 text-3xl leading-tight font-bold text-gray-100">Yahvin Gali</h1>
                         <h2 className="mt-3 text-gray-200">Full Stack + MLE Dev</h2>
                         <h3 className="mt-3 text-gray-300">📍 Los Angeles, CA - USA 🇺🇸</h3>
-                        <p className="mt-3 text-gray-200">End-to-End Generalist in Full Stack WebDev & LLM Research</p>
+                        <p className="mt-3 text-gray-200">End-to-End Generalist in Full Stack WebDev & LLMOps</p>
                         <div className="social mt-6 flex space-x-4">
                             {[
                                 { icon: <Email />, label: 'Email', action: () => window.location.href = 'mailto:yahvin@gmail.com' },
